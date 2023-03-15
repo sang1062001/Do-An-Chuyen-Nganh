@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Thông Tin Cửa Hàng"
+        android:background="#B10942"
+        app:titleTextColor="#F4F4F4"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/Thongtin"
+        android:layout_width="382dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Năm Thành Lập: 2022
+                      Giới thiệu:Cửa hàng chuyên bán các dòng điện thoại và laptop chính hãng"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <TextView
+        android:id="@+id/Diachi"
+        android:layout_width="382dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Chi Nhánh Chính Quận 5,
+                        Hiện có Chi nhánh phụ ở quận 8,6,bình chánh,10  "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Thongtin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
